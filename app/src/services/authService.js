@@ -3,13 +3,14 @@ import * as msal from "@azure/msal-browser";
 // MSAL configuration
 const msalConfig = {
   auth: {
-    clientId: "791879ec-061d-4037-81ba-51be25f70731",  // Replace with your Azure B2C Client ID
-    authority: "https://login.microsoftonline.com/tfp/791879ec-061d-4037-81ba-51be25f70731/B2C_1_GBG_Google",
-    redirectUri: "https://black-desert-006310210.5.azurestaticapps.net/#/",  // Replace with your app's redirect URI
+    clientId: "74c731c2-c972-4e07-ba9b-45271e49b0d6",  // Replace with your Azure B2C Client ID
+    // authority: "https://login.microsoftonline.com/tfp/791879ec-061d-4037-81ba-51be25f70731/B2C_1_GBG_Google",
+    authority: "https://gainsbeforegrooms.b2clogin.com/tfp/791879ec-061d-4037-81ba-51be25f70731/B2C_1_GBG_Google",
+    redirectUri: "http://localhost:8080/#/",  // Replace with your app's redirect URI
   },
   cache: {
-    cacheLocation: "localStorage", // Use localStorage to cache tokens
-    storeAuthStateInCookie: true,  // Useful for older browsers (IE11/Edge)
+    cacheLocation: "sessionStorage", // Use localStorage to cache tokens
+    storeAuthStateInCookie: false,  // Useful for older browsers (IE11/Edge)
   }
 };
 
