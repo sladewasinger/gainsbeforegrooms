@@ -4,7 +4,7 @@ import * as msal from "@azure/msal-browser";
 const msalConfig = {
   auth: {
     clientId: "791879ec-061d-4037-81ba-51be25f70731",  // Replace with your Azure B2C Client ID
-    authority: "https://gainsbeforegrooms.b2clogin.com/gainsbeforegrooms.onmicrosoft.com/B2C_1_GBG_Google",
+    authority: "https://login.microsoftonline.com/tfp/791879ec-061d-4037-81ba-51be25f70731/B2C_1_GBG_Google",
     redirectUri: "https://black-desert-006310210.5.azurestaticapps.net/#/",  // Replace with your app's redirect URI
   },
   cache: {
